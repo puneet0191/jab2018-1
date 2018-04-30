@@ -5,7 +5,6 @@ pipeline {
             steps {
                 sh 'php --version'
                 sh 'ls -la'
-                sh 'pwd'
             }
         }
     }
