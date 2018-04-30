@@ -4,6 +4,8 @@ pipeline {
         stage('build') {
             steps {
                 sh 'php --version'
+                sh 'ls -la'
+                sh 'pwd'
             }
         }
     }
