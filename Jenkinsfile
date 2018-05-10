@@ -10,7 +10,7 @@ pipeline {
             parallel {
                 stage('Test On Windows') {
                     agent {
-                        docker { image 'php' }
+                        docker { image 'jatitoam/docker-systemtests' }
                     }
                     steps {
                         echo "Test for Firefox"
@@ -20,7 +20,7 @@ pipeline {
                 }
                 stage('Test On Linux') {
                     agent {
-                        docker { image 'php' }
+                        docker { image 'jatitoam/docker-systemtests' }
                     }
                     steps {
                         echo "Tests for Firefox"
